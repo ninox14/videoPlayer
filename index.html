@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>museum</title>
+	<link rel="stylesheet" href="style.css">
+
+
+
+	<link rel="icon" href="assets/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;500;700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body class="">
+	<main>
+
+	<section class="video section" id="video">
+		<div class="container">
+			<div class="video__header">
+				<h2 class="video__title section__title">Video player</h2>
+				<p class="video__text">
+					Custom video player with hotkeys: <br> Space - toggle play/pause, M - mute, F - fullscreen, <br> Shift + ,/. - speed up/down
+				</p>
+			</div>
+			<div class="video__video-container">
+
+				<video class="video__video" poster="./assets/video/poster0.jpg">
+					<source class="video__source" src="./assets/video/video0.mp4">
+				</video>
+
+				<button class="video__play-button"></button>
+
+				<div class="video__controls">
+					<button class="video__play"></button>
+					<input class="video__progress video__controls_progress" type="range" value="0" min="0" max="100" step="0.2" >
+					<button class="video__volume"></button>
+					<input class="video__volume_level video__controls_progress" name="volume" type="range" min="0" max="1" step="0.05" value="0.20">
+					<button class="video__fullscreen"></button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	</main>
+
+
+
+
+
+	<!-- <script type="module" src="./sliders.js"></script> -->
+	<script src="./video.js"></script>
+	<!-- <script src="./index.js"></script> -->
+	<!-- <script src="./select.js"></script> -->
+	<!-- <script src="./form.js"></script> -->
+	<!-- <script src="./menu.js"></script> -->
+	<!-- <script src="./explore.js"></script> -->
+</body>
+
+</html>
